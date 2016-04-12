@@ -12,9 +12,9 @@
     var opacityScale = 0.6;
 
     var bgColorPerSection = [
-        [235, 248, 250],
-        [235, 242, 255],
-        [234, 231, 249]
+        [237, 245, 249],
+        [242, 248, 255],
+        [245, 244, 249]
     ];
 
     var colorPerSection = [
