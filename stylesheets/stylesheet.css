@@ -134,7 +134,7 @@ dfn {
 
 h1 {
   margin: 0.67em 0;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /**
@@ -901,23 +901,17 @@ a:hover, a.active {
 }
 
 .main-title {
-  color: #93B6F2
+  color: #3C4060
 }
 
 .blue-title {
+  padding-bottom: 15px;
   color: #ACC0E5; /*rgb(77,181,255);*/
 }
 
 .other-title {
+  padding-bottom: 15px;
   color: #999CCC;
-}
-
-.footer-text {
-  color: black;
-}
-
-footer a, footer a:visited {
-  color: rgb(77,181,255);
 }
 
 .body-text {
@@ -925,8 +919,20 @@ footer a, footer a:visited {
   color: #3C4060;
 }
 
+.footer-text {
+  color: #F4F8FF;
+}
+
+footer a, footer a:visited {
+  color: rgb(77,181,255);
+}
+
 footer {
-  background-color: grey;
+  background-color: #4F5160;
+}
+
+.animateWhenEnter {
+  display: hidden;
 }
 /*glow*/
 /*text-shadow: 0 0 3px rgba(204, 168, 214, .75), 0 0 6px rgba(204, 168, 214, .75), 0 0 10px rgba(204, 168, 214, .75);*/
