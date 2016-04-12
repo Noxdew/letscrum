@@ -12,6 +12,7 @@
 
     var colorPerSection = [
         [20, 255, 100],
+        [77, 181, 255],
         [77, 181, 255]
     ];
 
@@ -19,16 +20,16 @@
     var strokecolor = colorToString.apply(this, lastColor);
 
     var colorChange = [
-        //start, end, r, g, b
-        // [0, 500, 0, 0, 255],
-        // [500, 1000, 255, 0, 0],
+        //start, r, g, b
+        // [0, 0, 0, 255],
+        // [500, 255, 0, 0],
     ];
 
     function generateColorChangeArray() {
         var sections = $(".fill-screen");
         sections.each(function(i, sec) {
             var elemRect = sec.getBoundingClientRect();
-            colorChange.push([elemRect.top, elemRect.bottom].concat(colorPerSection[i]));
+            colorChange.push([elemRect.top].concat(colorPerSection[i]));
         });
     }
     generateColorChangeArray();
@@ -46,17 +47,27 @@
     }
 
     function changeColor(scrollValue) {
-        colorChange.some(function(row) {
-            if (row[0] <= scrollValue && row[1] >= scrollValue) {
-                time = (scrollValue - row[0]) / (row[1] - row[0]);
-                strokecolor = colorToString(
-                    clamp(0, 255, linearBezier(lastColor[0], row[2], time)).toFixed(0),
-                    clamp(0, 255, linearBezier(lastColor[1], row[3], time)).toFixed(0),
-                    clamp(0, 255, linearBezier(lastColor[2], row[4], time)).toFixed(0));
-                // $(document.body).css("background-color", "rgb(" + strokecolor + ")");
-                return true;
+        var maximumIndex = colorChange.length;
+
+        for (var i = maximumIndex - 1; i >= 0; i--) {
+            if (scrollValue > colorChange[i][0]) {
+                if (i == maximumIndex - 1) {
+                    strokecolor = colorToString.apply(this, colorChange[i].slice(1));
+                } else {
+                    var lowerBound = colorChange[i][0];
+                    var time = (scrollValue - lowerBound) / (colorChange[i + 1][0] - lowerBound);
+                    strokecolor = colorToString(
+                        clamp(0, 255, linearBezier(colorChange[i][1], colorChange[i + 1][1], time)).toFixed(0),
+                        clamp(0, 255, linearBezier(colorChange[i][2], colorChange[i + 1][2], time)).toFixed(0),
+                        clamp(0, 255, linearBezier(colorChange[i][3], colorChange[i + 1][3], time)).toFixed(0));
+                }
+                return;
             }
-        });
+        }
+    }
+
+    function getHeight() {
+        return $(document.body).height() - $("#footer").innerHeight();
     }
 
     function initHeader() {
@@ -67,7 +78,7 @@
             y: height / 2
         };
         width = $(document.body).width();
-        height = $(document.body).height();
+        height = getHeight();
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext("2d");
@@ -147,7 +158,7 @@
     }
     function resize() {
         width = $(document.body).width();
-        height = $(document.body).height();
+        height = getHeight();
         canvas.width = width;
         canvas.height = height;
         generateColorChangeArray();

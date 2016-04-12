@@ -42,7 +42,13 @@ $(function() {
         var scrollPos = $(document).scrollTop();
         $(".navbar a").each(function() {
             var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
+            var refElement = "";
+            try {
+                refElement = $(currLink.attr("href"));
+            } catch(ex) {
+                return;
+            }
+
             if (refElement.position().top <= scrollPos + 50 && refElement.position().top + refElement.height() > scrollPos + 50) {
                 $(".navbar a").each(function(i, link) {
                     link = $(link);

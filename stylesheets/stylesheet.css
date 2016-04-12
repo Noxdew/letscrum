@@ -676,12 +676,12 @@ form {
   color: #474747;
   text-indent: 3px;
 }
-h5:before {
+/*h5:before {
   padding-right: 0.3em;
   margin-left: -3.2em;
   content: "/////";
   color: #9ddcff;
-}
+}*/
 
 #main-content h6 {
   margin-bottom: 8px;
@@ -903,9 +903,21 @@ a:hover, a.active {
   color: rgb(77,181,255);
 }
 
+.footer-text {
+  color: black;
+}
+
+footer a, footer a:visited {
+  color: rgb(77,181,255);
+}
+
 .body-text {
   font-family: 300 16px/1.625 Lato, "Open Sans", sans-serif;
   color: white;
+}
+
+footer {
+  background-color: grey;
 }
 /*glow*/
 /*text-shadow: 0 0 3px rgba(204, 168, 214, .75), 0 0 6px rgba(204, 168, 214, .75), 0 0 10px rgba(204, 168, 214, .75);*/
