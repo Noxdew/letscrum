@@ -12,27 +12,22 @@
     var opacityScale = 0.6;
 
     var bgColorPerSection = [
-        [244, 248, 250],
+        [235, 248, 250],
         [235, 242, 255],
         [234, 231, 249]
     ];
 
     var colorPerSection = [
-        [91, 100, 172],
-        [153, 156, 204],
-        [158, 192, 240]
+        [25, 77, 77],
+        [68, 73, 136],
+        [17, 56, 110]
     ];
 
     var lastColor = colorPerSection[0];
     var strokecolor = colorToString.apply(this, lastColor);
     var lastBGColor = bgColorPerSection[0];
 
-    var colorChange = [
-        //start, r, g, b
-        // [0, 0, 0, 255],
-        // [500, 255, 0, 0],
-    ];
-
+    var colorChange = [];
     var bgColorChange = [];
 
     function generateColorChangeArray() {
