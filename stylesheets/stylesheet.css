@@ -872,8 +872,7 @@ footer a:hover {
 @media only screen and (max-width: 479px) { }
 
 .color-bg {
-  /*background-color: #FFF2F2;*/
-  background-color: #F4F8FF;
+  background-color: rgb(244, 248, 250);
 }
 
 .color-nav {
@@ -906,12 +905,24 @@ a:hover, a.active {
 
 .blue-title {
   padding-bottom: 15px;
-  color: #ACC0E5; /*rgb(77,181,255);*/
+  color: #999CCC;
 }
 
 .other-title {
   padding-bottom: 15px;
-  color: #999CCC;
+  color: #9EC0F0;
+}
+
+.main-title.glow {
+  text-shadow: 0 0 3px rgba(139, 149, 221, .75), 0 0 6px rgba(139, 149, 221, .75), 0 0 10px rgba(139, 149, 221, .75);
+}
+
+.blue-title.glow {
+  text-shadow: 0 0 3px rgba(174, 200, 245, .75), 0 0 6px rgba(174, 200, 245, .75), 0 0 10px rgba(174, 200, 245, .75);
+}
+
+.other-title.glow {
+  text-shadow: 0 0 3px rgba(190, 210, 255, .75), 0 0 6px rgba(190, 210, 255, .75), 0 0 10px rgba(190, 210, 255, .75);
 }
 
 .body-text {
@@ -934,5 +945,3 @@ footer {
 .animateWhenEnter {
   display: hidden;
 }
-/*glow*/
-/*text-shadow: 0 0 3px rgba(204, 168, 214, .75), 0 0 6px rgba(204, 168, 214, .75), 0 0 10px rgba(204, 168, 214, .75);*/

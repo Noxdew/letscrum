@@ -1,23 +1,31 @@
 (function($) {
     var width, height, canvas, ctx, points, target, animateHeader = true;
-
+    var background;
     $(function() {
         // initHeader();
         // initAnimation();
         canvas = document.getElementById("bgcanvas");
+        background = $($(".color-bg")[0]);
         addListeners();
     });
 
     var opacityScale = 0.6;
 
+    var bgColorPerSection = [
+        [244, 248, 250],
+        [235, 242, 255],
+        [234, 231, 249]
+    ];
+
     var colorPerSection = [
-        [20, 255, 100],
-        [77, 181, 255],
-        [77, 181, 255]
+        [91, 100, 172],
+        [153, 156, 204],
+        [158, 192, 240]
     ];
 
     var lastColor = colorPerSection[0];
     var strokecolor = colorToString.apply(this, lastColor);
+    var lastBGColor = bgColorPerSection[0];
 
     var colorChange = [
         //start, r, g, b
@@ -25,11 +33,14 @@
         // [500, 255, 0, 0],
     ];
 
+    var bgColorChange = [];
+
     function generateColorChangeArray() {
         var sections = $(".fill-screen");
         sections.each(function(i, sec) {
             var elemRect = sec.getBoundingClientRect();
             colorChange.push([elemRect.top].concat(colorPerSection[i]));
+            bgColorChange.push([elemRect.top].concat(bgColorPerSection[i]));
         });
     }
     generateColorChangeArray();
@@ -51,8 +62,10 @@
 
         for (var i = maximumIndex - 1; i >= 0; i--) {
             if (scrollValue > colorChange[i][0]) {
+                console.log(scrollValue)
                 if (i == maximumIndex - 1) {
                     strokecolor = colorToString.apply(this, colorChange[i].slice(1));
+                    background.css("background-color", "rgb(" + colorToString.apply(this, bgColorChange[i].slice(1)) + ")");
                 } else {
                     var lowerBound = colorChange[i][0];
                     var time = (scrollValue - lowerBound) / (colorChange[i + 1][0] - lowerBound);
@@ -60,10 +73,17 @@
                         clamp(0, 255, linearBezier(colorChange[i][1], colorChange[i + 1][1], time)).toFixed(0),
                         clamp(0, 255, linearBezier(colorChange[i][2], colorChange[i + 1][2], time)).toFixed(0),
                         clamp(0, 255, linearBezier(colorChange[i][3], colorChange[i + 1][3], time)).toFixed(0));
+
+                    background.css("background-color", "rgb(" + colorToString(
+                        clamp(0, 255, linearBezier(bgColorChange[i][1], bgColorChange[i + 1][1], time)).toFixed(0),
+                        clamp(0, 255, linearBezier(bgColorChange[i][2], bgColorChange[i + 1][2], time)).toFixed(0),
+                        clamp(0, 255, linearBezier(bgColorChange[i][3], bgColorChange[i + 1][3], time)).toFixed(0)) + ")");
                 }
                 return;
             }
         }
+        strokecolor = colorToString.apply(this, colorChange[0].slice(1));
+        background.css("background-color", "rgb(" + colorToString.apply(this, bgColorChange[0].slice(1)) + ")");
     }
 
     function getHeight() {
