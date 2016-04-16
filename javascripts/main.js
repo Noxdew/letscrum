@@ -89,3 +89,9 @@ $(function() {
         });
     }
 });
+
+$(function() {
+    $("#menubtn").click(function(){
+        $(this).toggleClass("open");
+    });
+});

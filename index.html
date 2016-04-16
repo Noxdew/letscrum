@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/btns.css" media="screen">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
@@ -34,17 +35,22 @@
     <nav class="navbar color-nav navbar-fixed-top" style="border-radius: 0">
       <div class="container-fluid">
         <div class="navbar-header">
+          <button class="navbar-toggle collapsed navicon-button uarr" aria-label="Toggle Navigation" id="menubtn" data-target="#navbar" data-toggle="collapse" aria-expanded="false">
+            <div class="navicon"></div>
+          </button>
           <a class="navbar-brand" href="#main">
             <!-- TODO -->
             <img alt="Brand" src="images/github-button.png" height="100%">
           </a>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="color-btn"><a href="#home">The Studio</a></li>
-          <li class="color-btn"><a href="#work">Our work</a></li>
-          <li class="color-btn"><a href="#portfolio">Portfolio</a></li>
-          <li class="color-btn"><a href="#footer">Contact us</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="color-btn"><a href="#home">The Studio</a></li>
+            <li class="color-btn"><a href="#work">Our work</a></li>
+            <li class="color-btn"><a href="#portfolio">Portfolio</a></li>
+            <li class="color-btn"><a href="#footer">Contact us</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
