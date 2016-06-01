@@ -872,15 +872,15 @@ footer a:hover {
 @media only screen and (max-width: 479px) { }
 
 .color-bg {
-  background-color: rgb(237, 245, 249);
+  background-color: #ECEFF1;
 }
 
 .color-nav {
-  background-color: rgba(60, 64, 96, 0.9);
+  background-color: rgba(26, 26, 26, 0.9);
 }
 
 a, a:visited {
-  color: #93B6F2;
+  color: #00E676;
   border-bottom: 3px solid transparent;
   padding-bottom: 12px !important;
 
@@ -891,7 +891,7 @@ a, a:visited {
 }
 
 a:hover, a.active {
-  border-bottom: 3px solid #93B6F2;
+  border-bottom: 3px solid #009688;
   padding-bottom: 12px !important;
 }
 
@@ -909,7 +909,7 @@ a:hover, a.active {
   border-radius: 5px;
 }
 a.letscrum-btn {
-  color: #B9F6CA;
+  color: #E0E0E0;
   border-bottom-width: 0;
   padding: 13px !important;
 }
@@ -922,7 +922,7 @@ a.letscrum-btn:hover {
 
 .blue-title {
   padding-bottom: 15px;
-  color: rgb(68, 73, 136);
+  color: #26A69A;
 }
 
 .other-title {
@@ -952,16 +952,16 @@ a.letscrum-btn:hover {
 }
 
 footer a, footer a:visited {
-  color: #93B6F2;
+  color: #00E676;
 }
 footer a:hover {
-  color: #93B6F2;
+  color: #00E676;
   text-decoration: none;
-  border-bottom: 3px solid #93B6F2;
+  border-bottom: 3px solid #009688;
 }
 
 footer {
-  background-color: #4F5160;
+  background-color: #424242;
 }
 
 .animateWhenEnter {
@@ -973,5 +973,5 @@ footer {
 }
 
 .footer-title-glow {
-  text-shadow: 0 0 3px rgba(255, 255, 255, .75);
+  text-shadow: 0 0 0px rgba(255, 255, 255, .75);
 }

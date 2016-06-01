@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/images/manifest.json">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#009688">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#009688">
+    <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
+    <meta name="msapplication-config" content="/images/browserconfig.xml">
+    <meta name="theme-color" content="#424242">
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.3.js"></script>
-		<script type="text/javascript" src="javascripts/TweenLite.js"></script>
-		<script type="text/javascript" src="javascripts/Ease.js"></script>
-    <script type="text/javascript" src="javascripts/Grid.js"></script>
 		<script type="text/javascript" src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,10 +42,10 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/btns.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/loading.css" media="screen">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
-    <!-- TODO -->
     <title>LetScrum | Interactive SCRUM Board For Every Project And Team</title>
   </head>
 
@@ -59,82 +59,83 @@
             <div class="navicon"></div>
           </button>
           <a class="navbar-brand" href="#main" style="padding: 10px">
-            <!-- TODO -->
             <img alt="Brand" src="images/letscrum-logo.png" height="110%">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="color-btn"><a href="#home">Letscrum</a></li>
-            <!-- <li class="color-btn"><a href="#work">Our work</a></li>
-            <li class="color-btn"><a href="#portfolio">Portfolio</a></li>
+            <li class="color-btn"><a href="#home">LetScrum</a></li>
+            <li class="color-btn"><a href="#features">Features</a></li>
+            <!-- <li class="color-btn"><a href="#portfolio">Portfolio</a></li>
             <li class="color-btn"><a href="#footer">Contact us</a></li> -->
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container body-text" style="margin-top: 50px; z-index: 1" id="main">
+    <div class="container body-text" style="margin-top: 50px; z-index: 1;" id="main">
       <div class="fill-screen" id="home">
         <div class="text-center">
-          <img alt="Brand" src="images/letscrum-logo.png" style="height: 150px; padding-top: 20px">
-          <h1 class="main-title" style="padding-top: 20px; padding-bottom: 40px">LetScrum</h1>
+          <div class="animated-logo" id="animated-logo">
+            <div class="animated-logo-column animated-logo-column1">
+              <div class="animated-logo-ticket ticket-move-down-11"></div>
+              <div class="animated-logo-ticket ticket-move-down-12"></div>
+              <div class="animated-logo-ticket ticket-move-down-13"></div>
+              <div class="animated-logo-ticket ticket-enter"></div>
+            </div>
+            <div class="animated-logo-column animated-logo-column2">
+              <div class="animated-logo-ticket in-right-3"></div>
+              <div class="animated-logo-ticket ticket-move-down-21"></div>
+              <div class="animated-logo-ticket ticket-move-down-22"></div>
+              <div class="animated-logo-ticket ticket-move-down-23"></div>
+            </div>
+            <div class="animated-logo-column animated-logo-column3">
+              <div class="animated-logo-ticket in-up-3"></div>
+              <div class="animated-logo-ticket ticket-done"></div>
+            </div>
+          </div>
+          <h1 class="main-title" style="padding-top: 20px; padding-bottom: 40px; margin-bottom: 0">LetScrum</h1>
+          <div style="font-size: 1.3em; margin-bottom: 40px">
+            A digital Scrum board designed to aid your team on the road to success
+            <br>
+            Try it out for free
+          </div>
           <div>
             <a href="https://app.letscrum.co.uk" class="letscrum-btn">Go to LetScrum</a>
           </div>
         </div>
       </div>
 
-      <!-- <div class="col-md-12 text-center fill-screen" id="work">
-        <div style="padding-bottom: 100px;">
-          <h1 class="blue-title glow">What We Do</h1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="col-md-12 text-center fill-screen" style="margin-top: 50px;" id="features">
+        <div style="padding-bottom: 50px;">
+          <h1 class="blue-title">Features</h1>
         </div>
 
         <div class="col-md-4 text-center animateWhenEnter">
           <div class="blue-title glow" style="margin-top: 25px">
-            <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
           </div>
-          <h4 class="blue-title">Development</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <h4 class="blue-title">Customisability</h4>
+          LetScrum has been built with customisability in mind. From colors to board stages, you can tailor it your way.
+          More customisable features coming soon, feel free to give us suggestions.
         </div>
         <div class="col-md-4 text-center animateWhenEnter">
           <div class="blue-title glow" style="margin-top: 25px">
-            <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-refresh fa-3x" aria-hidden="true"></i>
           </div>
-          <h4 class="blue-title">The Rope Line <span class="greyed">(Coming soon)</span></h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <h4 class="blue-title">Real-time updates</h4>
+          Tired of hitting the refresh button? Any change you make to a project is instantly updated for your teammates.
         </div>
         <div class="col-md-4 text-center animateWhenEnter">
           <div class="blue-title glow" style="margin-top: 25px">
-            <i class="fa fa-tasks fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-windows fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-apple fa-3x" style="padding-left: 3px" aria-hidden="true"></i>
+            <i class="fa fa-linux fa-3x" aria-hidden="true"></i>
           </div>
-          <h4 class="blue-title">LetScrum</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <h4 class="blue-title">LetScrum Native <span class="greyed">(Coming soon)</span></h4>
+          To make sure you are always available to your team, we are going to create native applications for Windows, OS X and Linux.
         </div>
-      </div> -->
-
-      <!-- <div class="col-md-12 text-center fill-screen" style="margin-top: 50px" id="portfolio">
-        <div style="padding-bottom: 100px;">
-          <h1 class="other-title glow">Portfolio</h1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-
-        <div class="col-md-6 text-center animateWhenEnter">
-          <div class="other-title glow" style="margin-top: 25px">
-            <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
-          </div>
-          <h4 class="other-title">The Rope Line <span class="greyed">(Coming soon)</span></h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div class="col-md-6 text-center animateWhenEnter">
-          <div class="other-title glow" style="margin-top: 25px">
-            <i class="fa fa-tasks fa-3x" aria-hidden="true"></i>
-          </div>
-          <h4 class="other-title">LetScrum</h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div> -->
+      </div>
     </div>
 
     <footer id="footer" class="footer-text">
@@ -143,7 +144,7 @@
           <h5>Contact us at: <a href="mailto:hello@noxdew.com" target="_top">hello@noxdew.com</a></h5>
         </div>
         <div class="col-md-5 col-md-offset-2 text-center">
-          <h5>Created with <i class="fa fa-heart heart" aria-hidden="true"></i> by <span class="footer-title-glow">Noxdew Developent</span> <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2016</h5>
+          <h5>Created with <i class="fa fa-heart heart" aria-hidden="true"></i> by <a class="footer-title-glow" target="_blank" href="http://noxdew.com">Noxdew Developent</a> <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2016</h5>
         </div>
       </div>
     </footer>
