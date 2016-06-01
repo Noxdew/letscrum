@@ -900,7 +900,24 @@ a:hover, a.active {
 }
 
 .main-title {
-  color: rgb(25, 77, 77);
+  color: #009688;
+}
+
+.letscrum-btn {
+  background-color: #009688;
+  font-size: 2em;
+  border-radius: 5px;
+}
+a.letscrum-btn {
+  color: #B9F6CA;
+  border-bottom-width: 0;
+  padding: 13px !important;
+}
+a.letscrum-btn:hover {
+  text-decoration: none;
+  border-bottom-width: 0;
+  padding: 13px !important;
+  box-shadow: 0 0 3px #00E676;
 }
 
 .blue-title {
