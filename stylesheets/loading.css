@@ -1,65 +1,20 @@
-@keyframes in-left-1 {
-    from {
-        transform: translate(-3000px, 2000px);
-    }
-}
-@keyframes in-left-2 {
-    from {
-        transform: translate(-3000px, 500px);
-    }
-}
-@keyframes in-left-3 {
-    from {
-        transform: translate(-3000px, -2000px);
-    }
-}
-@keyframes in-up-1 {
-    from {
-        transform: translate(-1500px, -3000px);
-    }
-}
-@keyframes in-up-2 {
-    from {
-        transform: translate(-150px, -3000px);
-    }
-}
-@keyframes in-up-3 {
-    from {
-        transform: translate(1500px, -3000px);
-    }
-}
-@keyframes in-right-1 {
-    from {
-        transform: translate(3000px, 2000px);
-    }
-}
-@keyframes in-right-2 {
-    from {
-        transform: translate(3000px, 500px);
-    }
-}
-@keyframes in-right-3 {
-    from {
-        transform: translate(3000px, -2000px);
-    }
-}
 @keyframes ticket-done {
     from, 75% {
         transform: translate(0, 0);
         opacity: 1;
     }
     to {
-        transform: translate(150%, 0);
+        transform: translate(58.33px, 0);
         opacity: 0;
     }
 }
 @keyframes ticket-enter {
     from {
-        transform: translate(0, -600%);
+        transform: translate(0, -120px);
         opacity: 0;
     }
     25%, to {
-        transform: translate(0, -390%);
+        transform: translate(0, -78px);
         opacity: 1;
     }
 }
@@ -68,7 +23,7 @@
         transform: translate(0, 0);
     }
     25%, to {
-        transform: translate(0, 130%);
+        transform: translate(0, 26px);
     }
 }
 @keyframes ticket-move-down-12 {
@@ -76,10 +31,10 @@
         transform: translate(0, 0);
     }
     25% {
-        transform: translate(0, 126%);
+        transform: translate(0, 26px);
     }
     50%, to {
-        transform: translate(141%, 0);
+        transform: translate(58.33px, 0);
     }
 }
 @keyframes ticket-move-down-13 {
@@ -87,7 +42,7 @@
         transform: translate(0, 0);
     }
     25% {
-        transform: translate(0, 126%);
+        transform: translate(0, 26px);
     }
     50% {
         transform: translate(0, 0);
@@ -98,7 +53,7 @@
         transform: translate(0, 0);
     }
     50%, to {
-        transform: translate(0, 130%);
+        transform: translate(0, 26px);
     }
 }
 @keyframes ticket-move-down-22 {
@@ -106,13 +61,13 @@
         transform: translate(0, 0);
     }
     50% {
-        transform: translate(0, 132%);
+        transform: translate(0, 26px);
     }
     75% {
-        transform: translate(141%, 0);
+        transform: translate(58.33px, 0);
     }
     to {
-        transform: translate(141%, -130%);
+        transform: translate(58.33px, -26px);
     }
 }
 @keyframes ticket-move-down-23 {
@@ -120,7 +75,7 @@
         transform: translate(0, 0);
     }
     50% {
-        transform: translate(0, 132%);
+        transform: translate(0, 26px);
     }
     75%, to {
         transform: translate(0, 0);
@@ -148,9 +103,9 @@ div.app-loading div.messaging {
 div.animated-logo {
     margin: 0 auto;
     margin-top: 30px;
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
     background-color: #424242;
     display: flex;
     flex-direction: row;
@@ -161,116 +116,54 @@ div.animated-logo div.animated-logo-column {
     flex-direction: column;
     background-color: #d0dae4;
     border-radius: 10px;
-    top: 6.66%;
-    height: 86.68%;
-    width: 26.72%;
+    top: 15px;
+    height: 170px;
+    width: 53.33px;
 }
 div.animated-logo div.animated-logo-column1 {
-    margin-left: 7%;
+    margin-left: 15px;
 }
 div.animated-logo div.animated-logo-column2 {
-    margin-left: 2.6%;
+    margin-left: 5px;
 }
 div.animated-logo div.animated-logo-column3 {
-    margin-left: 2.4%;
-}
-div.animated-logo-ticket.in-up-3 {
-    animation-name: in-up-3, none;
-}
-div.animated-logo-ticket.in-right-3 {
-    animation-name: in-right-3, none;
+    margin-left: 5px;
 }
 div.animated-logo-ticket.ticket-done {
-    animation-name: in-left-1, ticket-done;
+    animation-name: ticket-done;
 }
 div.animated-logo-ticket.ticket-enter {
     opacity: 0;
-    animation-name: in-left-1, ticket-enter;
+    animation-name: ticket-enter;
 }
 div.animated-logo-ticket.ticket-move-down-11 {
-    animation-name: in-left-3, ticket-move-down-11;
+    animation-name: ticket-move-down-11;
 }
 div.animated-logo-ticket.ticket-move-down-12 {
-    animation-name: in-up-2, ticket-move-down-12;
+    animation-name: ticket-move-down-12;
 }
 div.animated-logo-ticket.ticket-move-down-13 {
-    animation-name: in-right-2, ticket-move-down-13;
+    animation-name: ticket-move-down-13;
 }
 div.animated-logo-ticket.ticket-move-down-21 {
-    animation-name: in-up-1, ticket-move-down-21;
+    animation-name: ticket-move-down-21;
 }
 div.animated-logo-ticket.ticket-move-down-22 {
-    animation-name: in-right-1, ticket-move-down-22;
+    animation-name: ticket-move-down-22;
 }
 div.animated-logo-ticket.ticket-move-down-23 {
-    animation-name: in-left-2, ticket-move-down-23;
+    animation-name: ticket-move-down-23;
 }
 div.animated-logo-column div.animated-logo-ticket {
-    margin-top: 11%;
-    margin-left: 10.9%;
-    height: 11.54%;
-    width: 76.97%;
+    margin-top: 6px;
+    margin-left: 6px;
+    height: 20px;
+    width: 41px;
     border-radius: 7px;
     background-color: #009688;
     z-index: 1;
-    animation-delay: 0s, 1.5s;
-    animation-duration: 1.5s, 4s;
-    animation-iteration-count: 1, infinite;
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000), cubic-bezier(0.42, 0, 0.57999, 1);
-}
-@-moz-document url-prefix() {
-    div.animated-logo-column div.animated-logo-ticket {
-        margin-top: 6%;
-    }
-    @keyframes ticket-move-down-22 {
-        from, 29% {
-            transform: translate(0, 0);
-        }
-        50% {
-            transform: translate(0, 132%);
-        }
-        75% {
-            transform: translate(141%, 0);
-        }
-        to {
-            transform: translate(140%, -153%);
-        }
-    }
-    @keyframes ticket-move-down-21 {
-        from, 25% {
-            transform: translate(0, 0);
-        }
-        50%, to {
-            transform: translate(0, 153%);
-        }
-    }
-    @keyframes ticket-enter {
-        from {
-            transform: translate(0, -600%);
-            opacity: 0;
-        }
-        25%, to {
-            transform: translate(0, -458%);
-            opacity: 1;
-        }
-    }
-    @keyframes ticket-move-down-11 {
-        from, 9% {
-            transform: translate(0, 0);
-        }
-        25%, to {
-            transform: translate(0, 153%);
-        }
-    }
-    @keyframes ticket-move-down-12 {
-        from, 11% {
-            transform: translate(0, 0);
-        }
-        25% {
-            transform: translate(0, 140%);
-        }
-        50%, to {
-            transform: translate(141%, 0);
-        }
-    }
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.57999, 1);
 }

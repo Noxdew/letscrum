@@ -1,16 +1,18 @@
-// Section size adjustment
-$(function() {
-    var sections = $(".fill-screen");
-    function updateScreenHeight() {
-        var screenHeight = window.innerHeight;
-        sections.each(function(i, sec) {
-            $(sec).css("min-height", screenHeight - 50 + "px");
-        });
-    }
+$(function () {
+    var callback = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop == 0) {
+            $("#navbar").addClass("top");
+        } else {
+            $("#navbar").removeClass("top");
+        }
+    };
+    $(window).scroll(callback);
+    callback();
+});
 
-    updateScreenHeight();
-    window.dispatchEvent(new Event("resize"));
-    window.addEventListener("resize", updateScreenHeight);
+$(function () {
+    $("#year").text(new Date().getFullYear());
 });
 
 // Animate

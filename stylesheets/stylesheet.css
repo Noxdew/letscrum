@@ -736,10 +736,9 @@ dl dd {
 footer {
   padding-top: 20px;
   padding-bottom: 30px;
-  margin-top: 40px;
   font-size: 13px;
   color: #aaa;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: transparent;
 }
 
 footer a {
@@ -876,22 +875,32 @@ footer a:hover {
 }
 
 .color-nav {
-  background-color: rgba(26, 26, 26, 0.9);
+  background-color: #424242;
+  transition: background-color 0.3s;
+}
+
+.color-nav.top {
+  background-color: #cfcfcf;
+  border-bottom: solid 1px #009688;
+}
+
+.color-nav.top a {
+  color: black;
+}
+
+.color-nav a {
+  color: #4AD2B5;
+}
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus {
+  background-color: transparent;
 }
 
 a, a:visited {
   color: #00E676;
-  border-bottom: 3px solid transparent;
   padding-bottom: 12px !important;
-
-  -webkit-transition : border 500ms ease-out;
-  -moz-transition : border 500ms ease-out;
-  -o-transition : border 500ms ease-out;
-  transition : border 500ms ease-out;
 }
 
 a:hover, a.active {
-  border-bottom: 3px solid #009688;
   padding-bottom: 12px !important;
 }
 
@@ -917,7 +926,7 @@ a.letscrum-btn:hover {
   text-decoration: none;
   border-bottom-width: 0;
   padding: 13px !important;
-  box-shadow: 0 0 3px #00E676;
+  background-color: #007d71;
 }
 
 .letscrum-demobtn {
@@ -925,12 +934,11 @@ a.letscrum-btn:hover {
   border-radius: 5px;
 }
 a.letscrum-demobtn {
-  color: #009688;
+  color: #007d71;
   border-bottom-width: 0;
   padding: 2px !important;
 }
 a.letscrum-demobtn:hover {
-  text-decoration: none;
   border-bottom-width: 0;
   padding: 2px !important;
 }
@@ -971,8 +979,6 @@ footer a, footer a:visited {
 }
 footer a:hover {
   color: #00E676;
-  text-decoration: none;
-  border-bottom: 3px solid #009688;
 }
 
 footer {
@@ -989,4 +995,60 @@ footer {
 
 .footer-title-glow {
   text-shadow: 0 0 0px rgba(255, 255, 255, .75);
+}
+
+.section {
+  width: 100%;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.section.title {
+  background-color: #f9f9f9;
+  z-index: 0;
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.section.one {
+  background-color: white;
+}
+
+.section.two {
+  background-color: #f9f9f9;
+}
+
+.heroimage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('../images/lsScreenshot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  z-index: -2;
+  filter: blur(3px)
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  background-color: #cbcbcb;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#animated-logo {
+  transform: scale(0.75);
+  margin-bottom: 50px;
+}
+
+.relative {
+  position: relative;
 }
