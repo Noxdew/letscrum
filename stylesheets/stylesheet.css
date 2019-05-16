@@ -891,12 +891,13 @@ footer a:hover {
 .color-nav a {
   color: #4AD2B5;
 }
+
 .nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus {
   background-color: transparent;
 }
 
 a, a:visited {
-  color: #00E676;
+  color: #4AD2B5;
   padding-bottom: 12px !important;
 }
 
@@ -975,10 +976,10 @@ a.letscrum-demobtn:hover {
 }
 
 footer a, footer a:visited {
-  color: #00E676;
+  color: #4AD2B5;
 }
 footer a:hover {
-  color: #00E676;
+  color: #4AD2B5;
 }
 
 footer {
