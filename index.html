@@ -52,23 +52,19 @@
 
   <body class="color-bg">
     <nav id="navbar" class="navbar color-nav navbar-fixed-top" style="border-radius: 0">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed navicon-button uarr" aria-label="Toggle Navigation" id="menubtn" data-target="#navbar" data-toggle="collapse" aria-expanded="false">
-            <div class="navicon"></div>
-          </button>
-          <a class="navbar-brand" href="#main" style="padding: 10px">
-            <img alt="Brand" src="images/letscrum-logo.png" height="110%">
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li class="color-btn"><a href="#home">LetScrum</a></li>
-            <li class="color-btn"><a href="#features">Features</a></li>
-            <li class="color-btn"><a href="#screenshots">Preview</a></li>
-            <!-- <li class="color-btn"><a href="#portfolio">Portfolio</a></li>
-            <li class="color-btn"><a href="#footer">Contact us</a></li> -->
-          </ul>
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1 header-container">
+          <div>
+            <a class="navbar-brand" href="#main" style="padding: 10px">
+              <img alt="Brand" src="images/letscrum-logo.png" height="110%">
+            </a>
+            <a href="#home"><div class="color-btn">LetScrum</div></a>
+          </div>
+          <div>
+            <a href="#features"><div class="color-btn">Features</div></a>
+            <a href="#screenshots"><div class="color-btn">Demo</div></a>
+            <a href="https://letscrum.app"><div class="color-btn ls">Log In</div></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -76,84 +72,110 @@
     <div class="body-text" style="z-index: 1;" id="main">
       <div class="fill-screen section title" id="home">
         <div class="container text-center relative">
-          <div class="animated-logo" id="animated-logo">
-            <div class="animated-logo-column animated-logo-column1">
-              <div class="animated-logo-ticket ticket-move-down-11"></div>
-              <div class="animated-logo-ticket ticket-move-down-12"></div>
-              <div class="animated-logo-ticket ticket-move-down-13"></div>
-              <div class="animated-logo-ticket ticket-enter"></div>
-            </div>
-            <div class="animated-logo-column animated-logo-column2">
-              <div class="animated-logo-ticket"></div>
-              <div class="animated-logo-ticket ticket-move-down-21"></div>
-              <div class="animated-logo-ticket ticket-move-down-22"></div>
-              <div class="animated-logo-ticket ticket-move-down-23"></div>
-            </div>
-            <div class="animated-logo-column animated-logo-column3">
-              <div class="animated-logo-ticket"></div>
-              <div class="animated-logo-ticket ticket-done"></div>
-            </div>
-          </div>
-          <h1 class="main-title" style="padding-top: 20px; padding-bottom: 40px; margin-bottom: 0">LetScrum</h1>
-          <div style="font-size: 1.3em; margin-bottom: 40px">
-            A digital Scrum board designed to aid your team on the road to success
-            <br>
-            Try it out for free
+          <div style="font-size: 1.7em; margin-bottom: 80px; margin-top: 50px;">
+            The digital Scrum board designed to aid your team on the road to success
           </div>
           <div>
             <a href="https://letscrum.app" class="letscrum-btn">Try LetScrum</a>
           </div>
-          <div style='margin-top: 2rem'>
-            Or check out the <a href="https://demo.letscrum.app/" class="letscrum-demobtn">Demo project</a>
+        </div>
+      </div>
+      <div class="fill-screen section one hero" id="home">
+        <div class="container text-center relative">
+          <div class="container-center">
+            <div class="col-md-8">
+              <a href="https://demo.letscrum.app/">
+                <div class="heroimage">
+                  <img src="images/lsScreenshot.jpg" style='width: 100%' />
+                  <div class="overlay-button-container">
+                    <div class="letscrum-btn">Check out the demo project!</div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div id="overlay"></div>
-        <div class="heroimage"></div>
       </div>
 
-      <div class="text-center fill-screen section one" id="features">
-        <div class="container">
-          <div>
-            <h1 class="blue-title">Features</h1>
-          </div>
-
-          <div class="col-md-4 text-center animateWhenEnter">
-            <div class="blue-title glow" style="margin-top: 25px">
-              <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
-            </div>
+      <div class="fill-screen section two" id="features">
+        <div class="container chess">
+          <div class="col-md-4 col-md-offset-2 animateWhenEnter no-top-padding">
             <h4 class="blue-title">Customisability</h4>
             LetScrum has been built with customisability in mind. From colors to board stages, you can tailor it your way.
             More customisable features coming soon, feel free to give us suggestions.
           </div>
-          <div class="col-md-4 text-center animateWhenEnter">
-            <div class="blue-title glow" style="margin-top: 25px">
-              <i class="fa fa-refresh fa-3x" aria-hidden="true"></i>
+          <div class="col-md-4 text-center animateWhenEnter no-top-padding">
+            <div class="logo">
+              <div class="logo-inner">
+                <div class="blue-title glow">
+                  <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-4 col-md-offset-2 text-center animateWhenEnter">
+            <!-- <div class="blue-title glow" style="margin-top: 25px">
+              <i class="fa fa-refresh fa-3x" aria-hidden="true"></i>
+            </div> -->
+            <div class="animated-logo" id="animated-logo">
+              <div class="animated-logo-column animated-logo-column1">
+                <div class="animated-logo-ticket ticket-move-down-11"></div>
+                <div class="animated-logo-ticket ticket-move-down-12"></div>
+                <div class="animated-logo-ticket ticket-move-down-13"></div>
+                <div class="animated-logo-ticket ticket-enter"></div>
+              </div>
+              <div class="animated-logo-column animated-logo-column2">
+                <div class="animated-logo-ticket"></div>
+                <div class="animated-logo-ticket ticket-move-down-21"></div>
+                <div class="animated-logo-ticket ticket-move-down-22"></div>
+                <div class="animated-logo-ticket ticket-move-down-23"></div>
+              </div>
+              <div class="animated-logo-column animated-logo-column3">
+                <div class="animated-logo-ticket"></div>
+                <div class="animated-logo-ticket ticket-done"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animateWhenEnter">
             <h4 class="blue-title">Real-time updates</h4>
             Tired of hitting the refresh button? Any change you make to a project is instantly updated for your teammates.
           </div>
-          <div class="col-md-4 text-center animateWhenEnter">
-            <div class="blue-title glow" style="margin-top: 25px">
-              <i class="fa fa-windows fa-3x" aria-hidden="true"></i>
-              <i class="fa fa-apple fa-3x" style="padding-left: 3px" aria-hidden="true"></i>
-              <i class="fa fa-linux fa-3x" aria-hidden="true"></i>
-            </div>
+
+          <div class="col-md-4 col-md-offset-2 animateWhenEnter">
             <h4 class="blue-title">LetScrum Native <span class="greyed">(Coming soon)</span></h4>
-            To make sure you are always available to your team, we are going to create native applications for Windows, OS X and
-            Linux.
+            To make sure you are always available to your team, we are going to create native applications for Windows, OS X and Linux.
+          </div>
+          <div class="col-md-4 text-center animateWhenEnter">
+            <div class="logo">
+              <div class="logo-inner" style="margin-right: 5px;">
+                <div class="blue-title glow">
+                  <i class="fa fa-windows fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="logo-inner" style="margin-right: 5px;">
+                <div class="blue-title glow">
+                  <i class="fa fa-apple fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="logo-inner">
+                <div class="blue-title glow">
+                  <i class="fa fa-linux fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="text-center fill-screen section two" id="screenshots">
+      <div class="text-center fill-screen section one" id="screenshots">
         <div class="container">
           <div>
-            <h1 class="blue-title">Preview</h1>
+            <h1 class="blue-title animateWhenEnter">Experience it yourself</h1>
           </div>
-          <div>
-            Check out the <a href="https://demo.letscrum.app/" class="letscrum-demobtn">Demo project</a>
+          <div class="animateWhenEnter" style="margin-bottom: 30px;">
+            <a href="https://demo.letscrum.app/" class="letscrum-btn">Check out the demo project!</a>
           </div>
-          <a href="https://demo.letscrum.app/"><img src="images/lsScreenshot.jpg" style='width: 100%' /></a>
         </div>
       </div>
     </div>
